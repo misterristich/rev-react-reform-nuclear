@@ -1,0 +1,15 @@
+Add your images here.
+
+Recommended export:
+- 800px wide:  filename-800.jpg
+- 1200px wide: filename-1200.jpg
+
+Expected filenames (match the HTML):
+humboldt-01-800.jpg, humboldt-01-1200.jpg
+humboldt-02-800.jpg, humboldt-02-1200.jpg
+1776-01-800.jpg, 1776-01-1200.jpg
+1976-01-800.jpg, 1976-01-1200.jpg
+tmi-01-800.jpg, tmi-01-1200.jpg
+tmi-02-800.jpg, tmi-02-1200.jpg
+modern-01-800.jpg, modern-01-1200.jpg
+modern-02-800.jpg, modern-02-1200.jpg

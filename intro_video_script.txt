@@ -1,0 +1,16 @@
+30-Second Intro Video Script
+
+[0:00–0:05 | On-screen: title]
+“Welcome to Revolution. React. Reform. — a museum-style exhibit about nuclear power through the story of Humboldt Bay.”
+
+[0:05–0:12 | On-screen: 1776 → 1976]
+“In 1776, America had no electricity grid. By 1976—the Bicentennial—technology was everywhere, and nuclear power looked like the future.”
+
+[0:12–0:20 | On-screen: Humboldt Bay plant]
+“Humboldt’s plant opened in 1963, but it stopped operating in 1976 as safety and earthquake concerns grew.”
+
+[0:20–0:26 | On-screen: Three Mile Island]
+“Then, in 1979, Three Mile Island changed the national conversation and pushed stricter safety reforms.”
+
+[0:26–0:30 | On-screen: Today]
+“Today, nuclear energy is debated again for climate reasons. Explore the timeline to see how history shaped these choices.”

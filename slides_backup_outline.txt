@@ -1,0 +1,46 @@
+Google Slides Backup (Slide-by-Slide)
+
+Slide 1 — Title
+Revolution. React. Reform.
+Humboldt Bay Nuclear Power Plant & American History
+
+Slide 2 — Hook (1776 → 1976)
+- 1776: No power grid yet
+- 1976: Bicentennial reflection + modern energy needs
+Image: Declaration + Bicentennial visuals
+Caption: From independence to modern infrastructure in 200 years.
+
+Slide 3 — Local: Humboldt Opens (1963)
+- Plant begins operating near Eureka
+- Part of national nuclear boom
+Image: Humboldt plant photo or coastline
+Caption: Local community meets national technology trend.
+
+Slide 4 — Local + National: 1976 (Closure + Bicentennial)
+- Humboldt stops operating in 1976
+- Bicentennial era highlights progress + tradeoffs
+Image: Bicentennial logo/fireworks + local site
+Caption: Celebration and caution happen side-by-side.
+
+Slide 5 — National: Three Mile Island (1979)
+- Accident changes public trust
+- Leads to stricter regulations
+Image: Three Mile Island cooling towers
+Caption: “React” and “Reform” in U.S. energy policy.
+
+Slide 6 — Decommissioning & Long-Term Stewardship
+- Decommissioning takes years/decades
+- Oversight + monitoring continue
+Image: decommissioning / safety signage (if available)
+Caption: Big technologies have long timelines.
+
+Slide 7 — Today: Climate & Nuclear Debate
+- Nuclear is low-carbon
+- Questions remain: cost, waste, safety, trust
+Image: nuclear + wind turbines / modern energy
+Caption: The debate continues.
+
+Slide 8 — Conclusion
+Revolution: new nation + new technology
+React: public response to risk
+Reform: rules + cleanup + oversight
