@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Revolution. React. Reform. — Humboldt Bay & American Energy History</title>
+  <meta name="description" content="A museum-style exhibit on the Humboldt Bay Nuclear Power Plant and its national context: Revolution. React. Reform." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip" href="#exhibit">Skip to exhibit</a>
+
+  <header class="hero" role="banner">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap hero-content">
+      <div class="badge">Museum Exhibit</div>
+      <h1>Revolution. React. Reform.</h1>
+      <p class="lede">
+        Humboldt Bay Nuclear Power Plant & American History — a local story with national consequences.
+      </p>
+
+      <div class="hero-meta">
+        <div class="meta-item">
+          <div class="meta-k">Local Lens</div>
+          <div class="meta-v">Humboldt Bay (near Eureka)</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-k">National Lens</div>
+          <div class="meta-v">1776 → 1976 → Today</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-k">Key National Event</div>
+          <div class="meta-v">Three Mile Island (1979)</div>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a class="cta" href="#exhibit">Enter the Exhibit</a>
+        <a class="cta ghost" href="#sources">Sources</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="exhibit" class="wrap" role="main">
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Interactive Timeline</h2>
+          <p class="muted">
+            Local events on top. National events on bottom. Use ◀ ▶, arrow keys, or swipe on mobile.
+          </p>
+        </div>
+        <div class="panel-right">
+          <div class="counter" id="counter">1 / 6</div>
+        </div>
+      </div>
+
+      <div class="timeline" aria-label="Timeline slider">
+        <button class="nav prev" id="prevBtn" aria-label="Previous slide">◀</button>
+
+        <div class="stage" id="stage">
+          <!-- Slides are visible text in HTML (teacher-friendly) -->
+          <section class="slide active" data-title="Bridge: 1776 to 1976">
+            <div class="row local">
+              <div class="rail">
+                <div class="rail-label">Local</div>
+                <div class="rail-line"></div>
+              </div>
+              <div class="card">
+                <div class="kicker">LOCAL — 1776 → 1976 (Bridge)</div>
+                <h3>200 Years of Change</h3>
+                <p>
+                  This exhibit focuses on the modern era, where energy systems shape everyday life.
+                  We keep 1776 close to 1976 because the Bicentennial was a moment when Americans measured
+                  how far the nation had come—and what kind of future it wanted.
+                </p>
+              </div>
+            </div>
+
+            <div class="row national">
+              <div class="rail">
+                <div class="rail-label">National</div>
+                <div class="rail-line"></div>
+              </div>
+              <div class="card">
+                <div class="kicker">NATIONAL — 1776</div>
+                <h3>Declaration of Independence</h3>
+                <p>
+                  The United States begins. There is no electrical grid yet—energy comes from wood, wind,
+                  water power, and human labor.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" data-title="Humboldt opens">
+            <div class="row local">
+              <div class="rail"><div class="rail-label">Local</div><div class="rail-line"></div></div>
+              <div class="card">
+                <div class="kicker">LOCAL — 1963</div>
+                <h3>Humboldt Bay Plant Opens</h3>
+                <p>
+                  The Humboldt Bay Nuclear Power Plant begins operating near Eureka. It reflects confidence
+                  in advanced technology to supply reliable electricity.
+                </p>
+              </div>
+            </div>
+            <div class="row national">
+              <div class="rail"><div class="rail-label">National</div><div class="rail-line"></div></div>
+              <div class="card">
+                <div class="kicker">NATIONAL — 1960s–1970s</div>
+                <h3>Nuclear Power Boom</h3>
+                <p>
+                  Across the U.S., many nuclear plants are built as electricity demand rises and nuclear energy
+                  is promoted as modern and powerful.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" data-title="Bicentennial + closure">
+            <div class="row local">
+              <div class="rail"><div class="rail-label">Local</div><div class="rail-line"></div></div>
+              <div class="card">
+                <div class="kicker">LOCAL — 1976</div>
+                <h3>Plant Stops Operating</h3>
+                <p>
+                  The plant shuts down during the Bicentennial era. Concerns about earthquake risk, safety
+                  standards, and upgrade costs shape what happens next.
+                </p>
+              </div>
+            </div>
+            <div class="row national">
+              <div class="rail"><div class="rail-label">National</div><div class="rail-line"></div></div>
+              <div class="card">
+                <div class="kicker">NATIONAL — 1976</div>
+                <h3>U.S. Bicentennial</h3>
+                <p>
+                  Americans celebrate 200 years since 1776, reflecting on progress and the choices that will
+                  define the next century—energy included.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" data-title="Three Mile Island">
+            <div class="row local">
+              <div class="rail"><div class="rail-label">Local</div><div class="rail-line"></div></div>
+              <div class="card">
+                <div class="kicker">LOCAL — 1980s–1990s</div>
+                <h3>Safety Review & Long Cleanup</h3>
+                <p>
+                  After shutdown, planning and oversight continue for dismantling, cleanup, and safe long-term
+                  management—an example of how “reform” can take decades.
+                </p>
+              </div>
+            </div>
+            <div class="row national">
+              <div class="rail"><div class="rail-label">National</div><div class="rail-line"></div></div>
+              <div class="card">
+                <div class="kicker">NATIONAL — 1979</div>
+                <h3>Three Mile Island Accident</h3>
+                <p>
+                  A major nuclear incident in Pennsylvania changes public trust and leads to stricter safety
+                  regulations nationwide.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" data-title="Decommissioning era">
+            <div class="row local">
+              <div class="rail"><div class="rail-label">Local</div><div class="rail-line"></div></div>
+              <div class="card">
+                <div class="kicker">LOCAL — 2000s–2010s</div>
+                <h3>Decommissioning Work</h3>
+                <p>
+                  Decommissioning is the long process of dismantling systems, reducing hazards, and securing
+                  materials so the site can remain safe.
+                </p>
+              </div>
+            </div>
+            <div class="row national">
+              <div class="rail"><div class="rail-label">National</div><div class="rail-line"></div></div>
+              <div class="card">
+                <div class="kicker">NATIONAL — 2000s–2020s</div>
+                <h3>Energy & Climate Debate</h3>
+                <p>
+                  As climate change becomes urgent, nuclear energy is debated again because it produces low
+                  carbon emissions—but cost, safety, and waste remain central concerns.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="slide" data-title="Today">
+            <div class="row local">
+              <div class="rail"><div class="rail-label">Local</div><div class="rail-line"></div></div>
+              <div class="card">
+                <div class="kicker">LOCAL — 2020s</div>
+                <h3>Monitoring & Stewardship</h3>
+                <p>
+                  Even after shutdown, monitoring continues. The story becomes about stewardship—how communities
+                  manage the long tail of big technology decisions.
+                </p>
+              </div>
+            </div>
+            <div class="row national">
+              <div class="rail"><div class="rail-label">National</div><div class="rail-line"></div></div>
+              <div class="card">
+                <div class="kicker">NATIONAL — 2020s</div>
+                <h3>Modern Nuclear: New Designs, Old Questions</h3>
+                <p>
+                  New reactor concepts promise improved safety, but the same big questions persist: cost,
+                  waste, regulation, and public trust.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <button class="nav next" id="nextBtn" aria-label="Next slide">▶</button>
+      </div>
+
+      <div class="dots" id="dots" aria-label="Slide navigation dots"></div>
+
+      <div class="caption">
+        <strong>Theme guide:</strong>
+        <span class="pill">Revolution</span> = independence + technology leaps,
+        <span class="pill">React</span> = public response to risk,
+        <span class="pill">Reform</span> = rules + long-term cleanup.
+      </div>
+    </section>
+
+    <section class="panel two-col">
+      <div>
+        <h2>Gallery Labels</h2>
+        <p class="muted">Use these captions under images (website or Slides).</p>
+
+        <div class="label-card">
+          <h3>Humboldt Bay Nuclear Power Plant (Local)</h3>
+          <p>
+            The Humboldt Bay Nuclear Power Plant near Eureka operated from 1963 to 1976.
+            It shows how national technology trends reached small communities—and how safety and regulation
+            shaped what happened next.
+          </p>
+        </div>
+
+        <div class="label-card">
+          <h3>Bicentennial (National)</h3>
+          <p>
+            In 1976, the U.S. Bicentennial marked 200 years since 1776. It was a moment of celebration and
+            reflection—especially about technology, progress, and the nation’s future energy choices.
+          </p>
+        </div>
+
+        <div class="label-card">
+          <h3>Three Mile Island (National)</h3>
+          <p>
+            The 1979 Three Mile Island incident reshaped public trust in nuclear energy and led to stronger
+            safety standards. It’s a key example of “React” and “Reform” in action.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h2>Teacher Rubric Language</h2>
+        <p class="muted">Copy/paste this into the site as an “Academic Objectives” page.</p>
+
+        <div class="rubric">
+          <h3>Academic Objectives & Skills Demonstrated</h3>
+          <ul>
+            <li><strong>Historical Understanding:</strong> Connects local history (Humboldt Bay) to national events (Bicentennial, Three Mile Island).</li>
+            <li><strong>Chronology & Causation:</strong> Shows how major events lead to public reaction and policy reform over time.</li>
+            <li><strong>Evidence & Research:</strong> Uses credible sources (government agencies, archives, historical societies).</li>
+            <li><strong>Communication:</strong> Organizes information with headings, concise paragraphs, captions, and an interactive timeline.</li>
+            <li><strong>Theme Integration:</strong> Uses “Revolution. React. Reform.” to interpret continuity and change in U.S. history.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="sources" class="panel">
+      <h2>Sources</h2>
+      <p class="muted">Teacher-friendly citations (MLA-lite). Add URLs on your Sources page if required.</p>
+      <ol class="sources">
+        <li>U.S. Nuclear Regulatory Commission. “Humboldt Bay Power Plant (Decommissioning).” NRC, accessed 2026.</li>
+        <li>California Energy Commission. “Nuclear Power in California / Facility Background.” CEC, accessed 2026.</li>
+        <li>U.S. Nuclear Regulatory Commission. “Three Mile Island, Unit 2 Accident (1979).” NRC, accessed 2026.</li>
+        <li>Library of Congress. “United States Bicentennial (1976) — Historical Materials.” LOC, accessed 2026.</li>
+        <li>Humboldt County Historical Society (or local archives). “Humboldt Bay / Eureka regional history and energy development.” accessed 2026.</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2>30-Second Intro Video Script</h2>
+      <div class="script">
+        <p><strong>[0:00–0:05 | On-screen: title]</strong><br>
+        “Welcome to <em>Revolution. React. Reform.</em> — a museum-style exhibit about nuclear power through the story of Humboldt Bay.”</p>
+
+        <p><strong>[0:05–0:12 | On-screen: 1776 → 1976]</strong><br>
+        “In 1776, America had no electricity grid. By 1976—the Bicentennial—technology was everywhere, and nuclear power looked like the future.”</p>
+
+        <p><strong>[0:12–0:20 | On-screen: Humboldt Bay plant]</strong><br>
+        “Humboldt’s plant opened in 1963, but it stopped operating in 1976 as safety and earthquake concerns grew.”</p>
+
+        <p><strong>[0:20–0:26 | On-screen: Three Mile Island]</strong><br>
+        “Then, in 1979, Three Mile Island changed the national conversation and pushed stricter safety reforms.”</p>
+
+        <p><strong>[0:26–0:30 | On-screen: Today]</strong><br>
+        “Today, nuclear energy is debated again for climate reasons. Explore the timeline to see how history shaped these choices.”</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="muted">Exhibit page template • built for an 8th grade history project</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
