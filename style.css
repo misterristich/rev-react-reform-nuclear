@@ -1,15 +1,16 @@
 /* Museum-style exhibit aesthetic (no external fonts needed) */
 :root{
-  --bg:#070a12;
-  --ink:#eef2ff;
-  --muted:rgba(238,242,255,.72);
+  --bg:#050a07;
+  --ink:#eaf6ef;
+  --muted:rgba(234,246,239,.72);
   --panel:rgba(255,255,255,.06);
   --panel2:rgba(255,255,255,.04);
   --line:rgba(255,255,255,.14);
-  --shadow: 0 18px 70px rgba(0,0,0,.55);
+  --shadow: 0 18px 70px rgba(0,0,0,.60);
   --radius: 20px;
-  --accentA:#59a7ff; /* local */
-  --accentB:#ff5b6b; /* national */
+  --accentA:#3ddc84; /* forest mint */
+  --accentB:#1b9c5a; /* deep green */
+  --accentC:#0b3d2a; /* dark forest */
 }
 
 *{box-sizing:border-box}
@@ -18,9 +19,9 @@ body{
   margin:0;
   color:var(--ink);
   background:
-    radial-gradient(1200px 700px at 15% 10%, rgba(89,167,255,.22), transparent 55%),
-    radial-gradient(1000px 650px at 85% 0%, rgba(255,91,107,.22), transparent 55%),
-    radial-gradient(900px 600px at 50% 115%, rgba(255,255,255,.08), transparent 60%),
+    radial-gradient(1200px 700px at 15% 10%, rgba(61,220,132,.18), transparent 55%),
+    radial-gradient(1000px 650px at 85% 0%, rgba(27,156,90,.18), transparent 55%),
+    radial-gradient(900px 600px at 50% 115%, rgba(255,255,255,.06), transparent 60%),
     var(--bg);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   line-height:1.55;
@@ -39,8 +40,8 @@ body{
 .hero-bg{
   position:absolute; inset:-60px;
   background:
-    linear-gradient(135deg, rgba(89,167,255,.18), rgba(255,91,107,.14)),
-    radial-gradient(900px 520px at 50% 0%, rgba(255,255,255,.10), transparent 60%);
+    linear-gradient(135deg, rgba(61,220,132,.16), rgba(27,156,90,.12)),
+    radial-gradient(900px 520px at 50% 0%, rgba(255,255,255,.08), transparent 60%);
   filter: blur(18px);
   transform: scale(1.05);
   opacity:.9;
@@ -84,7 +85,7 @@ h1{margin:14px 0 10px; font-size: clamp(30px, 4vw, 54px); line-height:1.05}
   padding:10px 14px;
   border-radius: 14px;
   border:1px solid var(--line);
-  background: linear-gradient(90deg, rgba(89,167,255,.35), rgba(255,91,107,.28));
+  background: linear-gradient(90deg, rgba(61,220,132,.35), rgba(27,156,90,.28));
   color:var(--ink);
   text-decoration:none;
   font-weight:900;
@@ -362,3 +363,48 @@ h3{margin:0 0 6px; font-size: 18px}
 .footer-link{color:var(--ink);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.18)}
 .footer-link:hover{border-bottom-color:rgba(255,255,255,.45)}
 .footer-right{opacity:.85}
+
+
+
+/* --- Trinidad Dragons watermark (homepage) --- */
+.hero-wm{
+  position:absolute;
+  inset:-40px -40px -40px -40px;
+  background-image: url("images/trinidad-dragon-watermark-1400.png");
+  background-repeat: no-repeat;
+  background-position: 16% 58%;
+  background-size: min(980px, 92vw);
+  opacity: .08;
+  filter: saturate(.6) contrast(1.1) brightness(.9);
+  pointer-events:none;
+  mix-blend-mode: screen;
+}
+
+/* A very subtle watermark across the exhibit panels */
+.panel::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image: url("images/trinidad-dragon-watermark-1400.png");
+  background-repeat:no-repeat;
+  background-position: 90% 20%;
+  background-size: 520px;
+  opacity: .035;
+  filter: saturate(.5) contrast(1.1);
+  pointer-events:none;
+}
+
+.panel{
+  position: relative; /* required for ::after */
+  overflow: hidden;
+}
+
+/* Make rails and accents greener */
+.rail-line{
+  background: linear-gradient(180deg, rgba(61,220,132,.38), rgba(27,156,90,.30));
+}
+.dot.active{
+  background: linear-gradient(90deg, rgba(61,220,132,1), rgba(27,156,90,1));
+}
+.top .year{ color: var(--accentA); }
+.bottom .year{ color: var(--accentB); }
